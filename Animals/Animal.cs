@@ -8,18 +8,22 @@ namespace Animals
 {
     public abstract class Animal
     {
-        protected int NumberOfLegs;
-        public double WeightInKg { get; }
+        protected int numberOfLegs;
+        protected double weightInG;
         public string Name { get; }
         public abstract void SaySomething();
-        public int HowManyLegsDoYouHave()
+        public abstract void Eat();
+        public int GetNumberOfLegs()
         {
-            return NumberOfLegs;
+            return numberOfLegs;
         }
-        public Animal(string name, double weight)
+        public double GetWeightInG()
+        {
+            return weightInG;
+        }
+        public Animal(string name)
         {
             Name = name;
-            WeightInKg = weight;
         }
     }
 }

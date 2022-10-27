@@ -12,9 +12,14 @@ namespace Animals
         {
             Console.WriteLine("Trump!");
         }
-        public Elephant(string name) : base(name,5000)
+        public override void Eat()
         {
-            NumberOfLegs = 4;
+            weightInG+=5000;
+        }
+        public Elephant(string name) : base(name)
+        {
+            numberOfLegs = 4;
+            weightInG = 5000000;
         }
     }
 }

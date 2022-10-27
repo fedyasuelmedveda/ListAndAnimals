@@ -12,9 +12,14 @@ namespace Animals
         {
             Console.WriteLine("Hello, I'm lizzard.");
         }
-        public Lizzard(string name) : base(name,0.05) 
+        public override void Eat()
         {
-            NumberOfLegs = 4;
+            weightInG+=0.02;
+        }
+        public Lizzard(string name) : base(name) 
+        {
+            numberOfLegs = 4;
+            weightInG = 60;
         }
     }
 }

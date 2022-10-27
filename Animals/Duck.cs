@@ -13,9 +13,14 @@ namespace Animals
             Console.WriteLine("Crya!");
         }
 
-        public Duck(string name) : base(name,1) 
+        public override void Eat()
         {
-            NumberOfLegs = 2;
+            weightInG += 50;
+        }
+        public Duck(string name) : base(name) 
+        {
+            numberOfLegs = 2;
+            weightInG = 1000;
         }
     }
 }
