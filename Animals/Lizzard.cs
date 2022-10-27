@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Animals
 {
-    internal class Fly : Animal
+    internal class Lizzard : Animal
     {
         public override void SaySomething()
         {
-            Console.WriteLine("Bzzzz!");
+            Console.WriteLine("Hello, I'm lizzard.");
         }
-        public Fly(string name) : base(name,0.00002) 
+        public Lizzard(string name) : base(name,0.05) 
         {
-            NumberOfLegs = 6;
+            NumberOfLegs = 4;
         }
     }
 }

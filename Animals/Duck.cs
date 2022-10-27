@@ -12,6 +12,10 @@ namespace Animals
         {
             Console.WriteLine("Crya!");
         }
-        public Duck(string name) : base(name) { }
+
+        public Duck(string name) : base(name,1) 
+        {
+            NumberOfLegs = 2;
+        }
     }
 }

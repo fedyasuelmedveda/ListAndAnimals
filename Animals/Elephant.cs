@@ -12,6 +12,9 @@ namespace Animals
         {
             Console.WriteLine("Trump!");
         }
-        public Elephant(string name) : base(name) { }
+        public Elephant(string name) : base(name,5000)
+        {
+            NumberOfLegs = 4;
+        }
     }
 }
